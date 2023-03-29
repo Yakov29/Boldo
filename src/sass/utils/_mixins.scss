@@ -1,0 +1,42 @@
+@mixin btn(
+  $btn-background: $accent-color,
+  $btn-width: 210px,
+  $btn-pt: 16px,
+  $btn-pb: 16px,
+  $btn-color: $main-text
+) {
+  background-color: $btn-background;
+  font-family: 'Open Sans';
+  border-radius: 56px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  width: $btn-width;
+  display: flex;
+  justify-content: center;
+  padding-top: $btn-pt;
+  padding-bottom: $btn-pb;
+  color: $btn-color;
+}
+@mixin title($title-color: $secondary-color, $title-align: left) {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: $title-color;
+  text-align: $title-align;
+}
+@mixin small-title($sm-title-color: #f1f1f1) {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $sm-title-color;
+}
+@mixin secondary-text($sec-text-color: $secondary-color) {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: $sec-text-color;
+}
