@@ -1,0 +1,177 @@
+/* Variation of work by @mrhyddenn for Radios */
+
+.check {
+  cursor: pointer;
+  position: relative;
+  margin-right: auto;
+  width: 36px;
+  height: 36px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: var(--accent-color, #000000);
+}
+
+#cbx2:checked + .check svg {
+  stroke: var(--accent-color, #000000);
+}
+
+#cbx2:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx2:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+.connect {
+  // Временно нижний падинг(120).
+  padding-bottom: 200px;
+  padding-top: 120px;
+}
+
+.connect .container {
+  display: flex;
+  position: relative;
+  @media screen and (max-width: 1200px) {
+    display: block;
+  }
+}
+
+.connect__box {
+  display: block;
+  margin-left: auto;
+  width: 493px;
+  @media screen and (max-width: 1200px) {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+.connect__title {
+  @extend %connect;
+}
+
+.connect__list {
+  margin-top: 40px;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.connect__item {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+    display: flex;
+  }
+}
+
+.connect__name {
+  text-align: left;
+  @include small-title;
+  color: #000000;
+  @media screen and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.connect__button {
+  margin-top: 56px;
+  @include btn;
+  border: 2px solid #0a2640;
+  border-radius: 56px;
+  @media screen and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.connect__label {
+  background: #ffffff;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  width: 251px;
+  height: 388px;
+  position: absolute;
+  top: 222px;
+  left: 186px;
+  padding: 40px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.connect__label-box {
+  margin-top: 19px;
+}
+.connect__diagram-title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  color: #0a2640;
+}
+
+.connect__diagram-descripiton {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  display: flex;
+  align-items: center;
+  color: #0a2640;
+}

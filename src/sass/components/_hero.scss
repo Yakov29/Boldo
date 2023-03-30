@@ -3,6 +3,12 @@
   padding-bottom: 87px;
   position: relative;
 }
+.hero .container {
+  overflow: hidden;
+  @media screen and (max-width: 1200px) {
+    display: block;
+  }
+}
 .hero-block {
   display: flex;
   align-items: center;
@@ -11,22 +17,36 @@
 .hero__title {
   @include title();
   max-width: 601px;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 .hero__description {
   max-width: 601px;
   @include secondary-text($sec-text-color: $subtitle-color);
   font-weight: 400;
   margin-top: 16px;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 .hero__list {
   display: flex;
   margin-top: 49.75px;
+  @media screen and (max-width: 1200px) {
+    display: block;
+    justify-content: center;
+  }
 }
 .hero__item:first-child {
   margin-right: 24px;
 }
 .hero__button1 {
   @include btn($btn-width: 247px);
+  @media screen and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .hero__button2 {
   @include btn(
@@ -34,12 +54,19 @@
     $btn-background: transparent,
     $btn-color: $accent-color
   );
+  @media screen and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   border: 3px solid $accent-color;
 }
 .hero__svg {
   display: flex;
   margin-top: 95px;
   justify-content: space-between;
+  @media screen and (max-width: 1200px) {
+   display: none;
+  }
 }
 .circle {
   width: 1293px;
@@ -50,4 +77,17 @@
   left: 777px;
   top: -789px;
   z-index: -1;
+}
+
+.hero__grafhics{
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.hero__item{
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
