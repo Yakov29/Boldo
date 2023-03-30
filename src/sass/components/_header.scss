@@ -1,0 +1,42 @@
+.header {
+  padding-top: 56px;
+}
+.header-block {
+  display: flex;
+  position: absolute;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__img {
+    width: 166.22px;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.header__link {
+  @include secondary-text($sec-text-color: $accent-color);
+}
+.header__btn {
+  @include btn(
+    $btn-width: 128px,
+    $btn-pt: 8px,
+    $btn-pb: 8px,
+    $btn-background: transparent,
+    $btn-color: $accent-color
+  );
+  border: 3px solid #0a2640;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
