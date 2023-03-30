@@ -1,0 +1,53 @@
+.hero {
+  padding-top: 154px;
+  padding-bottom: 87px;
+  position: relative;
+}
+.hero-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__title {
+  @include title();
+  max-width: 601px;
+}
+.hero__description {
+  max-width: 601px;
+  @include secondary-text($sec-text-color: $subtitle-color);
+  font-weight: 400;
+  margin-top: 16px;
+}
+.hero__list {
+  display: flex;
+  margin-top: 49.75px;
+}
+.hero__item:first-child {
+  margin-right: 24px;
+}
+.hero__button1 {
+  @include btn($btn-width: 247px);
+}
+.hero__button2 {
+  @include btn(
+    $btn-width: 187px,
+    $btn-background: transparent,
+    $btn-color: $accent-color
+  );
+  border: 3px solid $accent-color;
+}
+.hero__svg {
+  display: flex;
+  margin-top: 95px;
+  justify-content: space-between;
+}
+.circle {
+  width: 1293px;
+  height: 1293px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  position: absolute;
+  left: 777px;
+  top: -789px;
+  z-index: -1;
+}
