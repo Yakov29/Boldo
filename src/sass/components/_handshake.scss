@@ -11,10 +11,11 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 32px;
+
 }
 
 .handshake__text{
-padding-top: 12px;
+margin-top: 12px;
 width: 842px;
 margin-left: auto;
 margin-right: auto;
@@ -28,6 +29,9 @@ text-align: center;
 flex: none;
 order: 1;
 flex-grow: 0;
+@media screen and (max-width: 1200px) {
+    width: 100%;
+}
 }
 
 .handshake__list{
@@ -37,16 +41,41 @@ justify-content: center;
 margin-left: auto;
 margin-right: auto;
 display: flex;
+@media screen and (max-width: 1200px) {
+    display: flex;
+    gap: 39px;
+}
+@media screen and (max-width: 967px) {
+    display: block;
+}
 }
 
 .handshake__card{
     width: 300px;
     height: 490px;
     margin-left: 99px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.handshake__card:hover .underline{
+    display: block;
+    transform: scale(1);
 }
 
 .handshake__card:first-child{
     margin-left: 0;
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .handshake__card-name{
@@ -75,4 +104,9 @@ border-bottom: white;
     width: 164px;
     height: 1px;    
     background: #FFFFFF;
+    transform: scale(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
 }

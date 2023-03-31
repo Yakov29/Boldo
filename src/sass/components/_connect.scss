@@ -91,6 +91,9 @@
     margin-left: 0;
     text-align: center;
     margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -146,9 +149,14 @@
   top: 222px;
   left: 186px;
   padding: 40px;
+  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1), 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (max-width: 1200px) {
     display: none;
   }
+}
+
+.connect__label:hover{
+  transform: rotate(360deg);
 }
 
 .connect__label-box {
@@ -174,4 +182,15 @@
   display: flex;
   align-items: center;
   color: #0a2640;
+}
+
+.connect__img{
+  @media screen and (max-width:1200px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
