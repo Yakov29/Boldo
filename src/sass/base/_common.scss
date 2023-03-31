@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 html {
   scroll-behavior: smooth;
-  
+  scroll-padding-top: 70px;
 }
 body {
   font-family: 'Open Sans';
@@ -23,7 +23,12 @@ button {
     margin-left: auto;
     margin-right: auto;
     @media screen and (max-width:1200px) {
-      width: 100%;
+      width: 768px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media screen and (max-width:767px) {
+      width: 480px;
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -31,4 +36,16 @@ button {
 
 .circle__box{
   overflow: hidden;
+}
+
+.scroll__link{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  all: unset;
+  cursor: n-resize;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
 }

@@ -14,11 +14,19 @@
 .header__list {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1200px) {
+    
+  }
 }
 .header__item {
   margin-right: 40px;
+  
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
   &:last-child {
     margin-right: 0;
+    display: block;
   }
 }
 .header__link {
