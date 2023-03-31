@@ -71,11 +71,11 @@
 .connect {
   // Временно нижний падинг(120).
   padding-bottom: 200px;
-  padding-top: 120px;
+  padding-top: 44px;
 }
 
 .connect .container {
-  display: flex;
+  // display: flex;
   position: relative;
   @media screen and (max-width: 1200px) {
     display: block;
@@ -85,6 +85,8 @@
 .connect__box {
   display: block;
   margin-left: auto;
+    padding-top: 66px;
+
   width: 493px;
   @media screen and (max-width: 1200px) {
     display: block;
@@ -112,10 +114,32 @@
   margin-top: 24px;
   display: flex;
   align-items: center;
+  // &::before {
+  //   content: '';
+  //   width: 36px;
+  //   height: 36px;
+  //   border-radius: 50%;
+  //   background-color: $accent-color;
+  //   margin-right: 27px;
+  //   background-image: url(../images/symbol-defs.svg#icon-checkmark);
+  // }
   @media screen and (max-width: 1200px) {
     text-align: center;
     display: flex;
   }
+}
+.connect__cicrcle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: $accent-color;
+  margin-right: 27px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-image: linear-gradient(to top, $accent-color, $accent-color),
+  // background-image: url(../images/symbol-defs.svg#icon-checkmark);
 }
 
 .connect__name {
@@ -149,13 +173,14 @@
   top: 222px;
   left: 186px;
   padding: 40px;
-  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1), 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    1000ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (max-width: 1200px) {
     display: none;
   }
 }
 
-.connect__label:hover{
+.connect__label:hover {
   transform: rotate(360deg);
 }
 
@@ -184,13 +209,33 @@
   color: #0a2640;
 }
 
-.connect__img{
-  @media screen and (max-width:1200px) {
+.connect__img {
+  @media screen and (max-width: 1200px) {
     display: block;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
   }
   @media screen and (max-width: 767px) {
     width: 100%;
   }
+}
+.connect__svg {
+  fill: red;
+  display: block;
+}
+.connect-img-card1-block {
+  display: flex;
+  // align-items: flex-end;
+  margin-bottom: 185px;
+}
+.connect-img-card2-block {
+  position: relative;
+}
+.connect__card2 {
+  position: absolute;
+  top: 0;
+
+}
+.connect__parent2 {
+  display: flex;
 }
