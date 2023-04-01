@@ -1,0 +1,115 @@
+.reviers {
+  background-color: #0a2640;
+  padding-top: 100px;
+  padding-bottom: 95px;
+}
+
+.reviers__title {
+  @include title;
+  color: #fff;
+  max-width: 716px;
+}
+
+.reviers__list {
+  display: flex;
+  gap: 50px;
+  margin-top: 73px;
+}
+
+.reviers__item {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  height: 322px;
+
+  &:nth-child(2) {
+    height: 394px;
+  }
+
+  &:nth-child(3) {
+    height: 358px;
+  }
+}
+
+.reviers-card__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  max-width: 270px;
+}
+
+.reviers-card__text2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  max-width: 250px;
+}
+
+.reviers__block {
+  display: flex;
+  margin-top: 40px;
+}
+
+.reviers__block2 {
+  display: block;
+  margin-left: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.reviers__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #0a2640;
+}
+
+.reviers-name__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #0a2640;
+}
+
+.reviers__img {
+  flex-shrink: 0;
+}
+
+.reviers-buttons__list {
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.reviers__button {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviers-buttons__img {
+  width: 36px;
+  height: 39px;
+  transform: rotate(-90deg);
+}
+
+.reviers-buttons__img2 {
+  width: 36px;
+  height: 39px;
+  transform: rotate(-270deg);
+}
+
+.test {
+    display: flex;
+}
