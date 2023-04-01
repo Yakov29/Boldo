@@ -1,12 +1,12 @@
 .reviers {
-  background-color: #0a2640;
+  background-color: $accent-color;
   padding-top: 100px;
   padding-bottom: 95px;
 }
 
 .reviers__title {
   @include title;
-  color: #fff;
+  color: $main-text;
   max-width: 716px;
 }
 
@@ -18,7 +18,7 @@
 
 .reviers__item {
   padding: 40px;
-  background-color: #fff;
+  background-color: $main-text;
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   height: 322px;
@@ -44,7 +44,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #000000;
+  color: $secondary-color;
   max-width: 250px;
 }
 
@@ -75,7 +75,7 @@
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #0a2640;
+  color: $accent-color;
 }
 
 .reviers__img {
