@@ -239,3 +239,62 @@
 .connect__parent2 {
   display: flex;
 }
+
+.connect__box2{
+  width: 493px;
+  margin-right: auto;
+}
+
+.advantages{
+  margin-top: 64px;
+}
+
+.advantages__item:first-child{
+  background: #0A2640;
+box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+border-radius: 4px;
+width: 500px;
+height: 68px;
+display: flex;
+align-items: center;
+padding-left: 20px;
+}
+
+.advantages__item{
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+border-radius: 4px;
+width: 500px;
+height: 68px;
+display: flex;
+align-items: center;
+padding-left: 20px;
+margin-bottom: 24px
+}
+
+.advantages__text-first{
+  @include small-title;
+}
+
+.advantages__text{
+  @include small-title;
+  color: black;
+}
+
+
+.card2__list{
+  margin-top: 22px;
+}
+.card2__item{
+  margin-bottom: 11px;
+}
+
+.card2__text{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  display: flex;
+  align-items: center;
+  color: #0a2640;
+}
