@@ -1,0 +1,60 @@
+.contact .container {
+  background-color: $accent-color;
+  border-radius: 12px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  position: relative;
+  overflow: hidden;
+  height: 391px;
+}
+.cicrcle-2 {
+  width: 1293px;
+  height: 1293px;
+  position: absolute;
+  bottom: 152px;
+  left: 466px;
+  z-index: 1;
+  background-color: #1c3d5b;
+  border-radius: 50%;
+}
+.contact-parent {
+  position: absolute;
+  left: 242px;
+  z-index: 2;
+}
+.connect-title-block {
+  display: block;
+  justify-content: center;
+}
+.contact__title {
+  //   text-align: center;
+  max-width: 716px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  //   flex-wrap: wrap;
+  @include title($title-align: center, $title-color: $main-text);
+}
+.contact__input {
+  border-radius: 240px;
+  width: 370px;
+  padding: 12px 32px;
+  margin-right: 24px;
+  @include small-title($sm-title-color: $secondary-color);
+  &::placeholder {
+    color: $secondary-color;
+  }
+}
+.contact-block {
+  display: flex;
+  justify-content: center;
+}
+.contact__btn {
+  @include btn(
+    $btn-background: $secondary-accent-color,
+    $btn-pt: 12px,
+    $btn-pb: 12px,
+    $btn-color: $accent-color
+  );
+}
