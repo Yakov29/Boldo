@@ -1,3 +1,8 @@
+.contact{
+  @media screen and (max-width:1200px) {
+    display: none;
+  }
+}
 .contact .container {
   background-color: $accent-color;
   border-radius: 12px;
