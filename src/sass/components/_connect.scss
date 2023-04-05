@@ -138,6 +138,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width:1200px) {
+    margin-left: auto;
+  }
   // background-image: linear-gradient(to top, $accent-color, $accent-color),
   // background-image: url(../images/symbol-defs.svg#icon-checkmark);
 }
@@ -147,7 +150,6 @@
   @include small-title;
   color: #000000;
   @media screen and (max-width: 1200px) {
-    margin-left: auto;
     margin-right: auto;
   }
 }
@@ -211,9 +213,7 @@
 
 .connect__img {
   @media screen and (max-width: 1200px) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
   }
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -243,10 +243,27 @@
   width: 493px;
   margin-right: auto;
   padding-top: 106px;
+  @media screen and (max-width:1200px) {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.connect__title{
+  @media screen and (max-width:1200px) {
+    text-align: center;
+  }
 }
 
 .advantages {
   margin-top: 64px;
+  @media screen and (max-width:1200px) {
+    display: block;
+    justify-content: center;
+  }
 }
 
 .advantages__item:first-child {
@@ -258,6 +275,9 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
+  @media screen and (max-width:1200px) {
+    width: 100%;
+  }
 }
 
 .advantages__item {
@@ -269,6 +289,9 @@
   align-items: center;
   padding-left: 20px;
   margin-bottom: 24px;
+  @media screen and (max-width:1200px) {
+    width: 100%;
+  }
 }
 
 .advantages__text-first {

@@ -1,14 +1,23 @@
 footer {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer .container {
   display: flex;
+  @media screen and (max-width:1200px) {
+    display: block;
+  }
 }
 
 .footer__block {
   display: block;
   width: 300px;
+  @media screen and (max-width:1200px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer__logo {
@@ -37,6 +46,9 @@ footer {
 .footer__list {
   display: flex;
   margin-left: 179px;
+  @media screen and (max-width:1200px) {
+    display: none;
+  }
 }
 
 .footer-list__blok {
