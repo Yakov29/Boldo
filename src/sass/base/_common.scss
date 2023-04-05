@@ -56,3 +56,15 @@ button {
 }
 
 
+.bottom{
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  all: unset;
+  cursor: n-resize;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  transform: rotate(180deg);
+}
