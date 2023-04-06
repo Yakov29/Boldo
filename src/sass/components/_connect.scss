@@ -124,9 +124,10 @@
   //   background-image: url(../images/symbol-defs.svg#icon-checkmark);
   // }
   @media screen and (max-width: 1200px) {
-    text-align: center;
-    display: flex;
+    // text-align: center;
+    // display: flex;
   }
+  
 }
 .connect__cicrcle {
   width: 36px;
@@ -138,8 +139,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     margin-left: auto;
+  }
+  @media screen and (max-width:767px) {
+    display: none;
   }
   // background-image: linear-gradient(to top, $accent-color, $accent-color),
   // background-image: url(../images/symbol-defs.svg#icon-checkmark);
@@ -151,6 +155,13 @@
   color: #000000;
   @media screen and (max-width: 1200px) {
     margin-right: auto;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 430px) {
+    display: none;
   }
 }
 
@@ -297,12 +308,18 @@
 .advantages__text-first {
   @include small-title;
   margin-left: 12px;
+  @media screen and (max-width:479px) {
+    font-size: 15px;
+  }
 }
 
 .advantages__text {
   @include small-title;
   color: black;
   margin-left: 12px;
+  @media screen and (max-width:479px) {
+    font-size: 15px;
+  }
 }
 
 .card2__list {
