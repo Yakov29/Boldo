@@ -1,359 +1,80 @@
-<div class="sticks">
-  <div class="stick"></div>
-  <div class="stick"></div>
-  <div class="stick"></div>
-  <div class="stick"></div>
+<!-- about -->
+<title>404</title>
+<link rel="stylesheet" href="./../sass/base/_not.scss">
+<div class="about">
+  <a class="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
+     <span class="icon"></span>
+  </a>
+  <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+     <span class="icon"></span>
+  </a>
+  <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+     <span class="icon"></span>
+  </a>
+  <a class="bg_links logo"></a>
 </div>
+<!-- end about -->
 
-<div class="circle">
-  <div class="cir"></div>
-  <div class="cir"></div>
-  <div class="cir"></div>
-</div>
+   <nav>
+       <div class="menu">
+           
+           
+           <div class="menu_icon">
+               <span class="icon"></span>
+           </div>
+       </div>
+   </nav>
 
-<div class="content">
-  <h1>404</h1>
-</div>
-<div class="sometxt">
-  <h3>The page you're searching for that is out of the universe</h3>
-  <a href="./../index.html">Back Home</a>
-</div>
-<style>
-  * {
-    font-family: "Source Sans Pro", sans-serif;
-  }
+   <section class="wrapper">
 
-  :root {
-    --bg: #f0f3f6;
-    --aninumber1-delay: 2.7s;
-  }
+       <div class="container">
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    background: var(--bg);
-  }
+           <div id="scene" class="scene" data-hover-only="false">
 
-  .content {
-    user-select: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-  }
 
-  .content h1 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+               <div class="circle" data-depth="1.2"></div>
 
-  .content span {
-    font-size: 250px;
-    font-weight: 900;
-    color: var(--bg);
-    text-shadow: -5px 4px 17px #ced0d3;
-  }
+               <div class="one" data-depth="0.9">
+                   <div class="content">
+                       <span class="piece"></span>
+                       <span class="piece"></span>
+                       <span class="piece"></span>
+                   </div>
+               </div>
 
-  .content span:nth-child(1) {
-    transform: translate(-635px, 0px);
-    animation: aninumber1 2s ease-out var(--aninumber1-delay) forwards;
-  }
+               <div class="two" data-depth="0.60">
+                   <div class="content">
+                       <span class="piece"></span>
+                       <span class="piece"></span>
+                       <span class="piece"></span>
+                   </div>
+               </div>
 
-  @keyframes aninumber1 {
-    0% {
-      transform: translate(-635px, 0px);
-    }
+               <div class="three" data-depth="0.40">
+                   <div class="content">
+                       <span class="piece"></span>
+                       <span class="piece"></span>
+                       <span class="piece"></span>
+                   </div>
+               </div>
 
-    50% {
-      transform: translate(0px, 0px);
-    }
+               <p class="p404" data-depth="0.50">404</p>
+               <p class="p404" data-depth="0.10">404</p>
 
-    65% {
-      transform: translate(15%, 0px);
-    }
+           </div>
+          
 
-    75% {
-      transform: translate(0px, 0px);
-    }
+           <div class="text">
+               <article>
+                   <p>Uh oh! Looks like you got lost. <br>Go back to the homepage if you dare!</p>
+                   <a href="./"><button>i dare!</button></a>
+               </article>
+           </div>
 
-    85% {
-      transform: translate(-35%, 0px);
-    }
-
-    100% {
-      transform: translate(0px, 0px);
-    }
-  }
-
-  .content span:nth-child(2) {
-    transform: translate(0px, -635px);
-    animation: aninumber2 2s ease-out var(--aninumber1-delay) forwards;
-  }
-
-  @keyframes aninumber2 {
-    0% {
-      transform: translate(0px, -635px);
-    }
-
-    50% {
-      transform: translate(0px, 0px);
-      font-size: 250px;
-    }
-
-    65% {
-      transform: translate(0px, 0px);
-      font-size: 0px;
-    }
-
-    75% {
-      transform: translate(0px, 0px);
-      font-size: 250px;
-    }
-
-    85% {
-      transform: translate(0px, 0px);
-      font-size: 315px;
-    }
-
-    100% {
-      transform: translate(0px, 0px);
-      font-size: 250px;
-    }
-  }
-
-  .content span:nth-child(3) {
-    transform: translate(635px, 0px);
-    animation: aninumber3 2s ease-out var(--aninumber1-delay) forwards;
-  }
-
-  @keyframes aninumber3 {
-    0% {
-      transform: translate(635px, 0px);
-    }
-
-    50% {
-      transform: translate(0px, 0px);
-    }
-
-    65% {
-      transform: translate(-15%, 0px);
-    }
-
-    75% {
-      transform: translate(0px, 0px);
-    }
-
-    85% {
-      transform: translate(35%, 0px);
-    }
-
-    100% {
-      transform: translate(0px, 0px);
-    }
-  }
-
-  .sometxt {
-    position: absolute;
-    font-size: 30px;
-    font-weight: 900;
-    width: 420px;
-    text-align: center;
-    bottom: -500px;
-    color: var(--bg);
-    text-shadow: 0px 0px 8px #ced0d3;
-    animation: sometxt 1s ease-out 5s forwards;
-  }
-
-  @keyframes sometxt {
-    0% {
-      bottom: -500px;
-    }
-
-    100% {
-      bottom: 50px;
-    }
-  }
-
-  .sometxt a {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    padding: 5px 20px 10px 20px;
-    background: var(--bg);
-    border-radius: 50px;
-    box-shadow: -5px -5px 10px #fff,
-      5px 5px 20px #BABECC;
-    text-decoration: none;
-    color: transparent;
-    text-shadow: 1px 2px 1px #ced0d3d8;
-    transition: 1s;
-    animation: sometxtlink 1s ease-out 5.5s forwards;
-  }
-
-  @keyframes sometxtlink {
-    0% {
-      bottom: -500px;
-    }
-
-    100% {
-      bottom: -60px;
-    }
-  }
-
-  .sometxt a:hover {
-    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.397),
-      inset 0px 0px 6px 0px rgba(191, 201, 231, 0.582);
-    color: var(--bg);
-    text-shadow: 0px 0px 8px #ced0d3;
-  }
-
-  .sometxt a:active {
-    color: var(--bg);
-    box-shadow: -4px -4px 12px rgba(253, 248, 248, 0.486),
-      4px 4px 12px rgba(191, 201, 231, 0.582);
-    text-shadow: 0px 0px 7px #ced0d3d8;
-  }
-
-  .stick {
-    --x: -250px;
-    --y: 150px;
-    --wed: 500px;
-    --hei: 60px;
-    height: 50px;
-    width: 0px;
-    position: absolute;
-    border-radius: 70px;
-    transform: rotate(var(--ro));
-    animation: anisti 1s linear forwards;
-    background: var(--bg);
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 100, 0.01),
-      5px 5px 16px 0px rgba(0, 0, 100, 0.1);
-  }
-
-  .stick:nth-child(1) {
-    bottom: var(--y);
-    left: var(--x);
-  }
-
-  .stick:nth-child(2) {
-    --ro: 90deg;
-    top: calc(((var(--y)) + (var(--hei))) * (-1));
-    left: calc(((var(--x) * 2) + (var(--wed))) * (-1));
-  }
-
-  .stick:nth-child(3) {
-    top: var(--y);
-    right: var(--x);
-  }
-
-  .stick:nth-child(4) {
-    --ro: 90deg;
-    bottom: calc(((var(--y)) + (var(--hei))) * (-1));
-    right: calc(((var(--x) * 2) + (var(--wed))) * (-1));
-  }
-
-  @keyframes anisti {
-    0% {
-      width: 0px;
-    }
-
-    100% {
-      width: 500px;
-    }
-  }
-
-  .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .circle .cir {
-    position: absolute;
-    border-radius: 50%;
-    background: var(--bg);
-    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 100, 0.01),
-      inset 0px 0px 15px 0px rgba(0, 0, 100, 0.1);
-  }
-
-  .circle .cir:nth-child(1) {
-    width: 0px;
-    height: 0px;
-    animation: anicir1 1s ease-in 1.5s forwards;
-  }
-
-  .circle .cir:nth-child(2) {
-    width: 0px;
-    height: 0px;
-    animation: anicir2 1s ease-in 2s forwards;
-  }
-
-  .circle .cir:nth-child(3) {
-    width: 0px;
-    height: 0px;
-    animation: anicir3 1s ease-in 2.3s forwards;
-  }
-
-  @keyframes anicir1 {
-    0% {
-      width: 0%;
-      height: 0%;
-    }
-
-    100% {
-      width: 500px;
-      height: 500px;
-    }
-  }
-
-  @keyframes anicir2 {
-    0% {
-      width: 0%;
-      height: 0%;
-    }
-
-    100% {
-      width: 350px;
-      height: 350px;
-    }
-  }
-
-  @keyframes anicir3 {
-    0% {
-      width: 0%;
-      height: 0%;
-    }
-
-    100% {
-      width: 230px;
-      height: 230px;
-    }
-  }
-</style>
-
-<script>
-  window.onload = () => {
-  var content = document.querySelector(".content h1");
-  content.innerHTML = content.textContent.replace(/\S/g, `<span>$&</span>`);
-
-  anime({
-    targets: ".circle .cir",
-    keyframes: [{ scale: 1 }, { scale: 1.2 }, { scale: 1 }],
-    duration: 2000,
-    direction: "alternate",
-    delay: anime.stagger(100, { form: "end" }),
-    loop: true,
-  });
-};
-
-</script>
+       </div>
+   </section>
+   <script>
+            // Parallax Code
+            var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+   </script>
