@@ -67,7 +67,7 @@ button {
   border-radius: 50%;
   padding: 15px;
   transform: rotate(180deg);
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:1200px) {
     display: none;
   }
 }
